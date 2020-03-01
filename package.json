@@ -1,9 +1,10 @@
 {
-  "name": "fetch",
+  "name": "@forgaia/fetch",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "private": false,
   "scripts": {
     "build": "tsc",
     "test": "jest --config=jest.config.json",
