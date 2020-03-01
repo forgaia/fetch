@@ -1,3 +1,3 @@
 export { default } from './FetchAPI';
-export * from './HttpError';
+export { default as HttpError } from './FetchAPI';
 export * from './FetchAPI';
