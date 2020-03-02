@@ -1,9 +1,27 @@
 import HttpError from './HttpError';
 
-interface RequestParams extends Partial<Omit<Request, 'body'>> {
+export interface RequestConfig{
+  /**
+   * Returns the URL of request as a string.
+   */
   readonly url: string;
-  readonly params?: Record<string, any>;
+  /**
+   * Returns request's HTTP method, which is "GET" by default.
+   */
+  readonly method?: string;
+  /**
+   * List if allowed query string params for this endpoint.
+   * All allowed keys must exists inside the the provided params array.
+   */
+  readonly allowedParams: string[];
+  /**
+   * Whether to add the mock HTTP header to the Request or not.
+   */
   readonly shouldMockRequest?: boolean;
+}
+
+interface RequestParams extends Partial<Omit<Request, 'body' | 'url'| 'method'>>, RequestConfig {
+  readonly params?: Record<string, any>;
   readonly body?: string;
 }
 
@@ -46,18 +64,22 @@ export default class FetchAPI {
     });
   }
 
-  private static serializeQueryString(params: any): string {
-    const urlSearchParams = Object.keys(params).map(key => {
+  /**
+   * @param params
+   * @param allowedParams
+   */
+  private static serializeQueryString(params: any, allowedParams: string[]): string {
+    const keys = (allowedParams.length ? allowedParams : Object.keys(params));
+    return keys.map(key => {
       // Encode objects and array to json. (used for cellIds and drillParams.)
       const value = typeof params[key] === 'object' ? JSON.stringify(params[key]) : params[key];
       return [encodeURIComponent(key), encodeURIComponent(value)].join('=');
-    });
-    return urlSearchParams.join('&');
+    }).join('&');
   }
 
   private static getUrl(req: RequestParams): string {
     if (req.params) {
-      return `${this.baseUrl}${req.url}?${this.serializeQueryString(req.params)}`;
+      return `${this.baseUrl}${req.url}?${this.serializeQueryString(req.params,req.allowedParams)}`;
     }
     return `${this.baseUrl}${req.url}`;
   }
