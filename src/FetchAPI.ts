@@ -1,6 +1,6 @@
 import HttpError from './HttpError';
 
-export interface RequestConfig{
+export interface RequestConfig {
   /**
    * Returns the URL of request as a string.
    */
