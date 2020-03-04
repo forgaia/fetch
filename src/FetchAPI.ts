@@ -30,6 +30,12 @@ export default class FetchAPI {
 
   private static baseUrl: string;
 
+  /**
+   * Treat some http code as valid response
+   * For Example: in PM Project we treat 422 (Validation error) as valid response)
+   */
+  private static whitelistedHTTPCodes: number[] = [];
+
   private static defaultHeaders: Record<string, string> = {
     'Access-Control-Allow-Origin': '*',
     'Content-Type': 'application/json'
@@ -38,6 +44,10 @@ export default class FetchAPI {
   private static defaultRequestInfo: Partial<RequestParams> = {
     method: 'GET'
   };
+
+  public static setWhitelistedHTTPCodes(errorCodes: number[]) {
+    this.whitelistedHTTPCodes = errorCodes;
+  }
 
   public static setShouldMockAllRequests(shouldMockAllRequests: boolean) {
     this.shouldMockAllRequests = shouldMockAllRequests;
@@ -103,7 +113,7 @@ export default class FetchAPI {
       headers: this.getHeaders(req)
     })
       .then(response => {
-        if (response.ok) {
+        if (response.ok || this.whitelistedHTTPCodes.includes(response.status)) {
           return response.json();
         }
 
