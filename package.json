@@ -48,12 +48,9 @@
     }
   },
   "lint-staged": {
-    "src/**/*.mdx": [
-      "prettier --write"
-    ],
-    "src/**/*.js": [
+    "src/**/*.{ts, tsx}": [
       "prettier --write",
-      "eslint --fix"
+      "eslint -c ./.eslintrc --fix"
     ]
   },
   "devDependencies": {
