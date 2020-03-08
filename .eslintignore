@@ -1,4 +1,4 @@
 node_modules/*
-src/init.serviceWorker.ts
 src/**/__tests__/**
+dist/*
 src/**/*.test.{ts,tsx}

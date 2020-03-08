@@ -20,7 +20,7 @@ export interface RequestConfig {
   readonly shouldMockRequest?: boolean;
 }
 
-interface RequestParams extends Partial<Omit<Request, 'body' | 'url'| 'method'>>, RequestConfig {
+interface RequestParams extends Partial<Omit<Request, 'body' | 'url' | 'method'>>, RequestConfig {
   readonly params?: Record<string, any>;
   readonly body?: string;
 }
@@ -79,17 +79,19 @@ export default class FetchAPI {
    * @param allowedParams
    */
   private static serializeQueryString(params: any, allowedParams: string[]): string {
-    const keys = (allowedParams.length ? allowedParams : Object.keys(params));
-    return keys.map(key => {
-      // Encode objects and array to json. (used for cellIds and drillParams.)
-      const value = typeof params[key] === 'object' ? JSON.stringify(params[key]) : params[key];
-      return [encodeURIComponent(key), encodeURIComponent(value)].join('=');
-    }).join('&');
+    const keys = allowedParams.length ? allowedParams : Object.keys(params);
+    return keys
+      .map(key => {
+        // Encode objects and array to json. (used for cellIds and drillParams.)
+        const value = typeof params[key] === 'object' ? JSON.stringify(params[key]) : params[key];
+        return [encodeURIComponent(key), encodeURIComponent(value)].join('=');
+      })
+      .join('&');
   }
 
   private static getUrl(req: RequestParams): string {
     if (req.params) {
-      return `${this.baseUrl}${req.url}?${this.serializeQueryString(req.params,req.allowedParams)}`;
+      return `${this.baseUrl}${req.url}?${this.serializeQueryString(req.params, req.allowedParams)}`;
     }
     return `${this.baseUrl}${req.url}`;
   }
