@@ -1,3 +1,7 @@
+env:
+  global:
+    - CONVENTIONAL_GITHUB_RELEASER_TOKEN=CONVENTIONAL_GITHUB_RELEASER_TOKEN
+    - github_token=$GITHUB_TOKEN
 language: node_js
 node_js:
   - 'stable'
@@ -11,7 +15,6 @@ deploy:
   - provider: script
     script: npm run release
     skip_cleanup: true
-    github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
     keep_history: true
     on:
       branch: master
