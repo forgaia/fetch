@@ -13,10 +13,20 @@
   "scripts": {
     "build": "tsc",
     "test": "jest --config=jest.config.json",
-    "prepublishOnly": "npm run build",
     "prepublish": "npm test",
     "semantic-release": "semantic-release",
-    "release": "standard-version"
+    "commit": "git-cz",
+    "lint": "eslint src/**",
+    "styleguide:build": "...",
+    "prettier:check": "prettier --check 'src/**/*.{js,mdx}'",
+    "validate": "run-s test lint prettier:check",
+    "prerelease": "git checkout master && git pull origin master && npm i && run-s validate styleguide:build && git-authors-cli && git add .",
+    "release": "standard-version -a",
+    "postrelease": "run-s release:*",
+    "release:tags": "git push --follow-tags origin master",
+    "release:github": "conventional-github-releaser -p angular",
+    "ci:validate": "rm -rf node_modules && npm ci && npm run validate",
+    "prepublishOnly": "npm run ci:validate && npm run build"
   },
   "repository": {
     "type": "git",
@@ -33,16 +43,35 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "src/**/*.mdx": [
+      "prettier --write",
+      "git add"
+    ],
+    "src/**/*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@types/jest": "25.1.3",
     "@types/node": "13.7.7",
+    "commitizen": "^4.0.3",
+    "conventional-github-releaser": "^3.1.3",
+    "eslint": "^6.8.0",
+    "git-authors-cli": "^1.0.23",
     "husky": "^4.2.3",
     "jest": "25.1.0",
+    "lint-staged": "^10.0.8",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
     "standard-version": "^7.1.0",
     "ts-jest": "25.2.1",
     "typescript": "3.8.3"
