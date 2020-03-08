@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - 'stable'
+cache:
+  directories:
+    - node_modules
+script:
+  - npm run prepublishOnly
+
+deploy:
+  - provider: script
+    script: npm run release
+    on:
+      branch: master

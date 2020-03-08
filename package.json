@@ -23,7 +23,7 @@
     "release": "standard-version -a",
     "postrelease": "run-s release:*",
     "release:tags": "git push --follow-tags origin master",
-    "release:github": "conventional-github-releaser -p angular -debug",
+    "release:github": "conventional-github-releaser -debug -p angular",
     "ci:validate": "rm -rf node_modules && npm ci && npm run validate",
     "prepublishOnly": "npm run ci:validate && npm run build"
   },
