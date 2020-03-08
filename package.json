@@ -18,7 +18,7 @@
     "commit": "git-cz",
     "lint": "eslint src/**",
     "styleguide:build": "...",
-    "prettier:check": "prettier --check 'src/**/*.{js,mdx}'",
+    "prettier:check": "prettier --check 'src/**/*.{ts, tsx}'",
     "validate": "run-s test lint prettier:check",
     "prerelease": "git checkout master && git pull origin master && npm i && run-s validate styleguide:build && git-authors-cli && git add .",
     "release": "standard-version -a",
