@@ -49,13 +49,11 @@
   },
   "lint-staged": {
     "src/**/*.mdx": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "src/**/*.js": [
       "prettier --write",
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   },
   "devDependencies": {
