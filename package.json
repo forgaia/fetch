@@ -1,6 +1,6 @@
 {
   "name": "@forgaia/fetch",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "",
   "author": "Mohamad Othman",
   "license": "MIT",
@@ -82,5 +82,8 @@
   "bugs": {
     "url": "https://github.com/forgaia/fetch/issues"
   },
-  "homepage": "https://github.com/forgaia/fetch#readme"
+  "homepage": "https://github.com/forgaia/fetch#readme",
+  "contributors": [
+    "Mohamad Othman <mohamad-1.othman@novartis.com>"
+  ]
 }
