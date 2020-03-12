@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.117](https://github.com/forgaia/fetch/compare/v1.0.116...v1.0.117) (2020-03-12)
+
+### [1.0.116](https://github.com/forgaia/fetch/compare/v1.0.115...v1.0.116) (2020-03-12)
+
+### [1.0.115](https://github.com/forgaia/fetch/compare/v1.0.114...v1.0.115) (2020-03-12)
+
+### [1.0.114](https://github.com/forgaia/fetch/compare/v1.0.113...v1.0.114) (2020-03-12)
+
+### [1.0.113](https://github.com/forgaia/fetch/compare/v1.0.112...v1.0.113) (2020-03-12)
+
+### [1.0.112](https://github.com/forgaia/fetch/compare/v1.0.111...v1.0.112) (2020-03-12)
+
+### [1.0.111](https://github.com/forgaia/fetch/compare/v1.0.110...v1.0.111) (2020-03-12)
+
+### [1.0.110](https://github.com/forgaia/fetch/compare/v1.0.109...v1.0.110) (2020-03-12)
+
+### [1.0.109](https://github.com/forgaia/fetch/compare/v1.0.108...v1.0.109) (2020-03-12)
+
 ### [1.0.108](https://github.com/forgaia/fetch/compare/v1.0.107...v1.0.108) (2020-03-12)
 
 ### [1.0.107](https://github.com/forgaia/fetch/compare/v1.0.106...v1.0.107) (2020-03-12)
