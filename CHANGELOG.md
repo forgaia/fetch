@@ -2,6 +2,102 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.96](https://github.com/forgaia/fetch/compare/v1.0.95...v1.0.96) (2020-03-12)
+
+### [1.0.95](https://github.com/forgaia/fetch/compare/v1.0.94...v1.0.95) (2020-03-12)
+
+### [1.0.94](https://github.com/forgaia/fetch/compare/v1.0.93...v1.0.94) (2020-03-12)
+
+### [1.0.93](https://github.com/forgaia/fetch/compare/v1.0.92...v1.0.93) (2020-03-12)
+
+### [1.0.92](https://github.com/forgaia/fetch/compare/v1.0.91...v1.0.92) (2020-03-12)
+
+### [1.0.91](https://github.com/forgaia/fetch/compare/v1.0.90...v1.0.91) (2020-03-12)
+
+### [1.0.90](https://github.com/forgaia/fetch/compare/v1.0.89...v1.0.90) (2020-03-12)
+
+### [1.0.89](https://github.com/forgaia/fetch/compare/v1.0.88...v1.0.89) (2020-03-12)
+
+### [1.0.88](https://github.com/forgaia/fetch/compare/v1.0.87...v1.0.88) (2020-03-12)
+
+### [1.0.87](https://github.com/forgaia/fetch/compare/v1.0.86...v1.0.87) (2020-03-12)
+
+### [1.0.86](https://github.com/forgaia/fetch/compare/v1.0.85...v1.0.86) (2020-03-12)
+
+### [1.0.85](https://github.com/forgaia/fetch/compare/v1.0.84...v1.0.85) (2020-03-12)
+
+### [1.0.84](https://github.com/forgaia/fetch/compare/v1.0.83...v1.0.84) (2020-03-12)
+
+### [1.0.83](https://github.com/forgaia/fetch/compare/v1.0.82...v1.0.83) (2020-03-12)
+
+### [1.0.82](https://github.com/forgaia/fetch/compare/v1.0.81...v1.0.82) (2020-03-12)
+
+### [1.0.81](https://github.com/forgaia/fetch/compare/v1.0.80...v1.0.81) (2020-03-12)
+
+### [1.0.80](https://github.com/forgaia/fetch/compare/v1.0.79...v1.0.80) (2020-03-12)
+
+### [1.0.79](https://github.com/forgaia/fetch/compare/v1.0.78...v1.0.79) (2020-03-12)
+
+### [1.0.78](https://github.com/forgaia/fetch/compare/v1.0.77...v1.0.78) (2020-03-12)
+
+### [1.0.77](https://github.com/forgaia/fetch/compare/v1.0.76...v1.0.77) (2020-03-12)
+
+### [1.0.76](https://github.com/forgaia/fetch/compare/v1.0.75...v1.0.76) (2020-03-12)
+
+### [1.0.75](https://github.com/forgaia/fetch/compare/v1.0.74...v1.0.75) (2020-03-12)
+
+### [1.0.74](https://github.com/forgaia/fetch/compare/v1.0.73...v1.0.74) (2020-03-12)
+
+### [1.0.73](https://github.com/forgaia/fetch/compare/v1.0.72...v1.0.73) (2020-03-12)
+
+### [1.0.72](https://github.com/forgaia/fetch/compare/v1.0.71...v1.0.72) (2020-03-12)
+
+### [1.0.71](https://github.com/forgaia/fetch/compare/v1.0.70...v1.0.71) (2020-03-12)
+
+### [1.0.70](https://github.com/forgaia/fetch/compare/v1.0.69...v1.0.70) (2020-03-12)
+
+### [1.0.69](https://github.com/forgaia/fetch/compare/v1.0.68...v1.0.69) (2020-03-12)
+
+### [1.0.68](https://github.com/forgaia/fetch/compare/v1.0.67...v1.0.68) (2020-03-12)
+
+### [1.0.67](https://github.com/forgaia/fetch/compare/v1.0.66...v1.0.67) (2020-03-12)
+
+### [1.0.66](https://github.com/forgaia/fetch/compare/v1.0.65...v1.0.66) (2020-03-12)
+
+### [1.0.65](https://github.com/forgaia/fetch/compare/v1.0.64...v1.0.65) (2020-03-12)
+
+### [1.0.64](https://github.com/forgaia/fetch/compare/v1.0.63...v1.0.64) (2020-03-12)
+
+### [1.0.63](https://github.com/forgaia/fetch/compare/v1.0.62...v1.0.63) (2020-03-12)
+
+### [1.0.62](https://github.com/forgaia/fetch/compare/v1.0.61...v1.0.62) (2020-03-12)
+
+### [1.0.61](https://github.com/forgaia/fetch/compare/v1.0.60...v1.0.61) (2020-03-12)
+
+### [1.0.60](https://github.com/forgaia/fetch/compare/v1.0.59...v1.0.60) (2020-03-12)
+
+### [1.0.59](https://github.com/forgaia/fetch/compare/v1.0.58...v1.0.59) (2020-03-12)
+
+### [1.0.58](https://github.com/forgaia/fetch/compare/v1.0.57...v1.0.58) (2020-03-12)
+
+### [1.0.57](https://github.com/forgaia/fetch/compare/v1.0.56...v1.0.57) (2020-03-12)
+
+### [1.0.56](https://github.com/forgaia/fetch/compare/v1.0.55...v1.0.56) (2020-03-12)
+
+### [1.0.55](https://github.com/forgaia/fetch/compare/v1.0.54...v1.0.55) (2020-03-12)
+
+### [1.0.54](https://github.com/forgaia/fetch/compare/v1.0.53...v1.0.54) (2020-03-12)
+
+### [1.0.53](https://github.com/forgaia/fetch/compare/v1.0.52...v1.0.53) (2020-03-12)
+
+### [1.0.52](https://github.com/forgaia/fetch/compare/v1.0.51...v1.0.52) (2020-03-12)
+
+### [1.0.51](https://github.com/forgaia/fetch/compare/v1.0.49...v1.0.51) (2020-03-12)
+
+### [1.0.50](https://github.com/forgaia/fetch/compare/v1.0.49...v1.0.50) (2020-03-12)
+
+### [1.0.49](https://github.com/forgaia/fetch/compare/v1.0.48...v1.0.49) (2020-03-12)
+
 ### [1.0.48](https://github.com/forgaia/fetch/compare/v1.0.46...v1.0.48) (2020-03-12)
 
 ### [1.0.47](https://github.com/forgaia/fetch/compare/v1.0.45...v1.0.47) (2020-03-12)
