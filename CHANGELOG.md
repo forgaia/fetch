@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.160](https://github.com/forgaia/fetch/compare/v1.0.159...v1.0.160) (2020-03-12)
+
 ### [1.0.159](https://github.com/forgaia/fetch/compare/v1.0.158...v1.0.159) (2020-03-12)
 
 ### [1.0.158](https://github.com/forgaia/fetch/compare/v1.0.157...v1.0.158) (2020-03-12)
