@@ -20,12 +20,12 @@
     "prettier:check": "prettier --check 'src/**/*.{ts, tsx}'",
     "validate": "run-s test lint prettier:check",
     "prerelease": "git checkout master && git pull origin master && npm i && git-authors-cli && git add .",
-    "release": "git pull origin master && standard-version -a",
-    "postrelease": "git pull origin master && run-s release:*",
+    "release": "standard-version -a",
+    "postrelease": "run-s release:*",
     "release:tags": "git pull && git push --follow-tags origin master",
     "release:npm": "npm publish --scope=@forgaia --access=public",
     "ci:validate": "rm -rf node_modules && npm ci && npm run validate",
-    "prepublishOnly": "git pull origin master && npm run ci:validate && npm run build"
+    "prepublishOnly": "npm run ci:validate && npm run build"
   },
   "repository": {
     "type": "git",
