@@ -23,7 +23,7 @@
     "release": "git pull origin master && standard-version -a",
     "postrelease": "git pull origin master && run-s release:*",
     "release:tags": "git pull && git push --follow-tags origin master",
-    "release:npm": "npm publish",
+    "release:npm": "npm publish --scope=@forgaia --access=public",
     "ci:validate": "rm -rf node_modules && npm ci && npm run validate",
     "prepublishOnly": "git pull origin master && npm run ci:validate && npm run build"
   },

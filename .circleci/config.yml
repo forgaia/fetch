@@ -9,6 +9,9 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
+            - run:
+                name: Authenticate with registry
+                command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
             - run: npm run prepublishOnly
             - run: npm run release
 workflows:
