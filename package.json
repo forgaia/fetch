@@ -1,6 +1,6 @@
 {
   "name": "@forgaia/fetch",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "description": "",
   "author": "Mohamad Othman",
   "license": "MIT",
@@ -23,7 +23,7 @@
     "release": "standard-version -a",
     "postrelease": "run-s release:*",
     "release:tags": "git push --follow-tags origin master",
-    "release:github": "conventional-github-releaser -debug -p angular",
+    "release:npm": "npm publish",
     "ci:validate": "rm -rf node_modules && npm ci && npm run validate",
     "prepublishOnly": "npm run ci:validate && npm run build"
   },
