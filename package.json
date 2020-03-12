@@ -20,7 +20,7 @@
     "prettier:check": "prettier --check 'src/**/*.{ts, tsx}'",
     "validate": "run-s test lint prettier:check",
     "prerelease": "git checkout master && git pull origin master && npm i && git-authors-cli && git add .",
-    "release": "git pull origin master && && standard-version -a",
+    "release": "git pull origin master && standard-version -a",
     "postrelease": "git pull origin master && run-s release:*",
     "release:tags": "git pull && git push --follow-tags origin master",
     "release:npm": "npm publish",
