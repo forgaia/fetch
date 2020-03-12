@@ -15,7 +15,7 @@
     "test": "jest --config=jest.config.json",
     "prepublish": "CI=true npm test",
     "semantic-release": "semantic-release",
-    "commit": "git-cz",
+    "commit": "git-cz && npm run release:tags",
     "lint": "eslint src/**",
     "prettier:check": "prettier --check 'src/**/*.{ts, tsx}'",
     "validate": "run-s test lint prettier:check",
