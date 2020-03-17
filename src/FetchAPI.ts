@@ -67,7 +67,7 @@ export default class FetchAPI {
     FetchAPI.setDefaultHeaders({ Authorization: `Bearer ${token}` });
   }
 
-  public static set setDefaultRequestInfo(reqInfo: Partial<Request>) {
+  public static setDefaultRequestInfo(reqInfo: Partial<Request>) {
     Object.keys(reqInfo).forEach((key: string) => {
       // @ts-ignore
       FetchAPI.defaultRequestInfo[key] = reqInfo[key];
