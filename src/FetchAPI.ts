@@ -79,8 +79,7 @@ export default class FetchAPI {
    * @param allowedParams
    */
   private static serializeQueryString(params: any, allowedParams: string[]): string {
-    const keys = allowedParams.length ? allowedParams : Object.keys(params);
-    return keys
+    return allowedParams
       .map(key => {
         // Encode objects and array to json. (used for cellIds and drillParams.)
         const value = typeof params[key] === 'object' ? JSON.stringify(params[key]) : params[key];
@@ -91,7 +90,8 @@ export default class FetchAPI {
 
   private static getUrl(req: RequestParams): string {
     if (req.params) {
-      return `${this.baseUrl}${req.url}?${this.serializeQueryString(req.params, req.allowedParams)}`;
+      const qs = this.serializeQueryString(req.params, req.allowedParams);
+      return `${this.baseUrl}${req.url}${qs ? `?${qs}` : ''}`;
     }
     return `${this.baseUrl}${req.url}`;
   }
