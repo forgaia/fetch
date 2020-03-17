@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/forgaia/fetch/compare/v1.1.3...v1.1.4) (2020-03-17)
+
+
+### Bug Fixes
+
+* fix set default request info ([9019746](https://github.com/forgaia/fetch/commit/9019746cd64f49858c003f47139dacfdf8dd316d))
+
 ### [1.1.3](https://github.com/forgaia/fetch/compare/v1.1.2...v1.1.3) (2020-03-17)
 
 ### [1.1.2](https://github.com/forgaia/fetch/compare/v1.1.1...v1.1.2) (2020-03-12)
