@@ -13,19 +13,11 @@
   "scripts": {
     "build": "tsc",
     "test": "jest --config=jest.config.json",
-    "prepublish": "CI=true npm test",
-    "semantic-release": "semantic-release",
-    "commit": "git-cz && npm run release:tags",
-    "lint": "eslint src/**",
-    "prettier:check": "prettier --check 'src/**/*.{ts, tsx}'",
-    "validate": "run-s test lint prettier:check",
-    "prerelease": "git checkout master && git pull origin master && npm i && git-authors-cli && git add .",
-    "release": "standard-version -a",
-    "postrelease": "run-s release:*",
-    "release:tags": "git pull && git push --follow-tags origin master",
-    "release:npm": "npm publish --scope=@forgaia --access=public",
-    "ci:validate": "rm -rf node_modules && npm ci && npm run validate",
-    "prepublishOnly": "npm run ci:validate && npm run build"
+    "lint:nofix": "eslint src/**",
+    "prettier:nofix": "prettier --check 'src/**/*.{ts, tsx}'",
+    "commit": "git-cz",
+    "prepublishOnly": "npm run build",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
