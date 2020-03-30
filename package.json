@@ -19,10 +19,7 @@
     "prepublishOnly": "npm run build",
     "semantic-release": "semantic-release"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/forgaia/fetch.git"
-  },
+  "repository": "https://github.com/forgaia/fetch.git",
   "keywords": [
     "fetch",
     "API"
